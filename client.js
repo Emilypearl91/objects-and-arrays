@@ -26,4 +26,29 @@ console.log(lightColors);
 let colors = lightColors.concat(darkColors);
 
 //check it in node
-console.log(colors)
+console.log(colors);
+
+//create a object using new object()
+let pencilCase = new Object();
+
+
+//check in node
+console.log(pencilCase);
+
+//create and log an array of the values of your object
+ pencilCase = {
+  pens: 2,
+  pencilCrayons: 7,
+  highlighters: 2,
+};
+
+//check in node
+console.log(Object.values(pencilCase));
+
+//reduce abilty to edit object
+Object.freeze(pencilCase);
+
+//check in node
+//pencilCase.pens = 3;
+console.log(pencilCase);
+//pen stays at 2
